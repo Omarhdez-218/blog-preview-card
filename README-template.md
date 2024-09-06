@@ -60,23 +60,37 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
+Learned how to use a ttf font from a saved file within my directory using @font-face instead of importing it with a url via @import,
+```css
+@font-face {
+    font-family: Figtree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+```
+ A child element doesn't inherit parents background color by default, so i set all children elements background color to inherit,
+```css
+
+#container {
+  background-color: white;
+  ...
+}
+
+/* Now every child will have white as their background color */
+#container * {
+  background-color: inherit;
+}
+
+```
+
+Border-radius doesn't apply to img/svg tags, so in order to change shape of the corners i used the following...
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<svg clip-path="inset(0% round 30px)">
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
+
+
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
