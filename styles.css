@@ -30,6 +30,10 @@
     background-color: inherit;
 }
 
+#art {
+    border-radius: 10px;
+    width: 320px
+}
 
 #learning {
     background-color: yellow;
