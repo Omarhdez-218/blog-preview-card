@@ -36,7 +36,7 @@
 }
 
 #learning {
-    background-color: yellow;
+    background-color: hsl(47, 88%, 63%);
     display: inline-block;
     font-size: 16px;
     font-weight: 800;
@@ -75,9 +75,9 @@
 
 
 .parent {
-    padding: 1rem 1rem;
-    text-align: left;
+    padding: 1rem 0;
   }
+  
   .child {
     display: inline-block;
     vertical-align: middle;
